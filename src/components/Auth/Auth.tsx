@@ -5,7 +5,7 @@ import client from '@/client'
 export const Auth = () => {
     const [username, setUsername] = useState('johndoe@mail.com')
     const [status, setStatus] = useState('logged out')
-    const [password, setPassword] = useState('')
+    const [password, setPassword] = useState('12345678')
 
     const handleUsernameChange = (e: { target: { value: React.SetStateAction<string> } }) => {
         setUsername(e.target.value)
